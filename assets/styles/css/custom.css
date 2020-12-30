@@ -17,8 +17,11 @@
 }
 .cm-icon-box{
     position: absolute;
-    left: 2rem;
+    left: 1rem;
 }
 .bg-gray-light{
     background-color: rgba(233, 213, 213, 0.7);;
+}
+.has-h-26{
+    height: 6rem;
 }
