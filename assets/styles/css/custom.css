@@ -1,3 +1,12 @@
+
+@font-face{
+    font-family: 'Montserrat-Light';
+    src: url('../../fonts/montserrat/Montserrat-Light.otf');
+}
+
+html * {
+    font-family: 'Montserrat-Light', Fallback, sans-serif !important;
+}
 .has-border-bottom{
     border-bottom: 1px solid rgba(233, 213, 213, 0.7);
 }
@@ -24,4 +33,20 @@
 }
 .has-h-26{
     height: 6rem;
+}
+.is-black-outline{
+    border: 2px solid #000000;
+}
+.is-unstyled{
+    list-style-type: none;
+}
+.cm-size-6{
+    font-size: .9rem;
+}
+.cm-hr-1{
+    height: 1px;
+    background-color: rgba(34, 34, 34, 0.856);
+}
+.cm-footer{
+    padding: 3rem 1.5rem 2rem;
 }
