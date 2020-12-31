@@ -12,16 +12,28 @@
 </head>
 <body>
     <!-- Banner -->
-    <div class="has-border-bottom">
-        <div class="container p-2">
+    <div class="has-border-bottom campaign">
+        <div class="container">
             <div class="is-flex is-justify-content-space-between">
                 <div class="is-size-7">
-                    <p>Gratis Ebook 9 Cara Cerdas Menggunakan Domain [x]</p>
+                    <div class="is-flex">
+                        <img src="assets/svg/bookmark.svg"/>
+                        <p class="mx-3 p-2">Gratis Ebook 9 Cara Cerdas Menggunakan Domain [x]</p>
+                    </div>
                 </div>
-                <div class="is-size-7">
-                    <a href="#" class="mx-2 has-text-dark">0247-5305505</a>
-                    <a href="#" class="mx-2 has-text-dark">Live Chat</a>
-                    <a href="#" class="mx-2 has-text-dark">Member Area</a>
+                <div class="is-size-7 p-2 is-flex is-vcentered">                  
+                    <a href="#" class="mx-2 has-text-dark">
+                        <img src="assets/svg/phone-alt-solid.svg" class="cm-xsm-icon mx-2"/>
+                        0247-5305505
+                    </a>
+                    <a href="#" class="mx-2 has-text-dark">
+                        <img src="assets/svg/chat-bubbles-black.svg" class="mx-2 cm-xsm-icon"/>
+                        Live Chat
+                    </a>
+                    <a href="#" class="mx-2 has-text-dark">
+                        <img src="assets/svg/user.svg" class="mx-2 cm-xsm-icon"/>
+                        Member Area
+                    </a>
                 </div>
             </div>
         </div>
@@ -33,7 +45,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <img src="assets/svg/niagahoster-logo.svg" width="112" height="28">
                 </a>
             
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -145,22 +157,28 @@
             <div class="columns is-desktop is-vcentered">
                 <div class="column has-text-centered">
                     <div>
-                        <img src="assets/svg/icon PHP Hosting_zendguard.svg"/>
-                        <p>PHP Zend Guard Loader</p>
+                        <div class="img-wrapper">
+                            <img src="assets/svg/icon PHP Hosting_zendguard.svg"/>
+                        </div>                        
+                        <p class="mt-2">PHP Zend Guard Loader</p>
                     </div>
                     
                 </div>
                 <div class="column has-text-centered">
                     <div>
-                        <img src="assets/svg/icon PHP Hosting_composer.svg" />
-                        <p>PHP Composer</p>
+                        <div class="img-wrapper">
+                            <img src="assets/svg/icon PHP Hosting_composer.svg" />
+                        </div>                        
+                        <p class="mt-2">PHP Composer</p>
                     </div>
                     
                 </div>
                 <div class="column has-text-centered">
                     <div>
-                        <img src="assets/svg/icon PHP Hosting_ioncube.svg" />
-                        <p>PHP ionCube Loader</p>
+                        <div class="img-wrapper">
+                            <img src="assets/svg/icon PHP Hosting_ioncube.svg" />
+                        </div>                        
+                        <p class="mt-2">PHP ionCube Loader</p>
                     </div>
                     
                 </div>
@@ -487,10 +505,25 @@
                         <p class="has-text-weight-medium">Bagikan jika Anda Menyukai halaman ini.</p>
                     </div>
                     <div class="column is-half">
-                        <div class="mx-5">
-                            <p>
-                                FB
-                            </p>
+                        <div class="mx-5 is-flex">
+                            <div class="mx-1 is-flex">
+                                <img src="assets/svg/facebook-colored.svg"/>
+                                <div class="shared-counted mx-2">
+                                    <span>80k</span>
+                                </div>
+                            </div>
+                            <div class="mx-1 is-flex">
+                                <img src="assets/svg/twitter-colored.svg"/>
+                                <div class="shared-counted mx-2">
+                                    <span>450</span>
+                                </div>
+                            </div>
+                            <div class="mx-1 is-flex">
+                                <img src="assets/svg/googleplus-colored.svg"/>
+                                <div class="shared-counted mx-2">
+                                    <span>1900</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -504,13 +537,16 @@
         <div class="container">
         <div class="columns is-vcentered">
                 <div class="column is-four-fifths">
-                    <p class="is-size-3 has-text-white">
-                        Perlu <span class="has-text-weight-medium">BANTUAN?</span> 
-                        Hubungi Kami : <span class="has-text-weight-medium">0247-5305505</span> 
+                    <p class="is-size-4 has-text-white">
+                        Perlu <span class="has-text-weight-bold">BANTUAN?</span> 
+                        Hubungi Kami : <span class="has-text-weight-bold">0247-5305505</span> 
                     </p>
                 </div>
                 <div class="column">
-                    <button class="button is-primary is-inverted is-outlined is-rounded">Live Chat</button>
+
+                    <button class="button is-primary is-inverted is-outlined is-rounded">
+                        <img src="assets/svg/chat-bubbles.svg" class="cm-md-icon mr-3"/>
+                        Live Chat</button>
                 </div>
         </div>
         </div>
@@ -518,7 +554,7 @@
     <!-- Section Hotline -->
 
     <!-- Footer -->
-    <footer class="cm-footer has-background-dark">
+    <footer class="cm-footer has-background-dark-jet">
         <div class="container">
             <div class="columns">
                 <div class="column">
@@ -731,14 +767,26 @@
                                 <button class="button is-info is-rounded has-text-weight-medium is-small mr-2">Berlangganan</button>
                             </form>
                         </div>
-                        <p class="is-size-7 has-text-grey-lighter">
+                        <p class="is-size-7 has-text-grey-lighter mt-3">
                             Dapatkan Promo dan konten menarik dari penyedia hosting terbaik Anda.
                         </p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="pb-2 pt-6">
-                        <p class="has-text-grey-lighter">FB</p>
+                        <p class="has-text-grey-lighter">
+                            <div class="is-flex">
+                                <div class="cm-social-button mx-2">
+                                    <img src="assets/svg/facebook-f-brands.svg" class="cm-md-icon"/>
+                                </div>
+                                <div class="cm-social-button mx-2">
+                                    <img src="assets/svg/twitter-brands.svg" class="cm-md-icon"/>
+                                </div>
+                                <div class="cm-social-button mx-2">
+                                    <img src="assets/svg/google-plus-g-brands.svg" class="cm-md-icon"/>
+                                </div>
+                            </div>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -746,7 +794,7 @@
                 <p class="has-text-grey-light is-size-6 has-text-weight-medium">
                     PEMBAYARAN
                 </p>
-
+                <img src="assets/svg/payment-icon.svg" />
                 <p class="cm-size-6 has-text-grey-light">
                     Aktivasi instan dengan e-Payment. Hosting dan domain langsung aktif
                 </p>
