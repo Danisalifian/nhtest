@@ -1,0 +1,22 @@
+[
+  {
+    "packageName": "Bayi",
+    "initialPrice": "Rp 19.900",
+    "price": "Rp 14.900"
+  },
+  {
+    "packageName": "Pelajar",
+    "initialPrice": "Rp 46.900",
+    "price": "Rp 23.450"
+  },
+  {
+    "packageName": "Personal",
+    "initialPrice": "Rp 58.900",
+    "price": "Rp 38.900"
+  },
+  {
+    "packageName": "Bisnis",
+    "initialPrice": "Rp 109.900",
+    "price": "Rp 65.900"
+  }
+]

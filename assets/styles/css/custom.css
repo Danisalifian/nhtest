@@ -151,6 +151,9 @@ html * {
 .has-border-info {
   border: 1px solid #3298dc;
 }
+.is-linethrough {
+  text-decoration: line-through;
+}
 
 @media only screen and (max-width: 768px) {
   .campaign {

@@ -200,10 +200,23 @@
 
                 <div class="mt-6">
                     <div class="columns is-gapless">
+                    <?php
+                        $data = file_get_contents("price.json");
+                        $data = json_decode($data, true);
+                        // foreach($data as $row){
+                        //     echo '<p>'.$row["price"].'</p>';
+                        // }
+                    ?>
                         <div class="column is-one-quarter">
                             <div class="plan-container">
                                 <div class="plan-content">
                                     <p class="is-size-3 has-text-weight-bold">Bayi</p>
+                                </div>
+                                <div class="plan-content py-3">
+                                <?php
+                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[0]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">'.$data[0]["price"].'/ bln</p>';                
+                                ?>
                                 </div>
                                 <div class="plan-content py-3">
                                     <p class="cm-size-6"><span class="has-text-weight-bold">938</span> Pengguna Terdaftar</p>
@@ -232,6 +245,12 @@
                                     <p class="is-size-3 has-text-weight-bold">Pelajar</p>
                                 </div>
                                 <div class="plan-content py-3">
+                                <?php
+                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[1]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">'.$data[1]["price"].'/ bln</p>';                
+                                ?>
+                                </div>
+                                <div class="plan-content py-3">
                                     <p class="cm-size-6"><span class="has-text-weight-bold">4.168</span> Pengguna Terdaftar</p>
                                 </div>
                                 <div class="plan-content py-5">
@@ -258,6 +277,12 @@
                             <div class="plan-container has-border-info">
                                 <div class="plan-content has-background-info no-border">
                                     <p class="is-size-3 has-text-weight-bold has-text-white no-border">Personal</p>
+                                </div>
+                                <div class="plan-content py-3 has-background-info no-border">
+                                <?php
+                                    echo '<p class="is-linethrough has-text-white cm-size-6 py-2">'.$data[2]["initialPrice"].'</p>'; 
+                                    echo '<p class="has-text-white pb-2">'.$data[2]["price"].'/ bln</p>';                
+                                ?>
                                 </div>
                                 <div class="ribbon-wrapper">
                                     <div class="ribbon">BEST SELLER!</div>
@@ -296,6 +321,12 @@
                             <div class="plan-container">
                                 <div class="plan-content">
                                     <p class="is-size-3 has-text-weight-bold">Bisnis</p>
+                                </div>
+                                <div class="plan-content py-3">
+                                <?php
+                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[3]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">'.$data[3]["price"].'/ bln</p>';                
+                                ?>
                                 </div>
                                 <div class="plan-content py-3">
                                     <p class="cm-size-6"><span class="has-text-weight-bold">3.552</span> Pengguna Terdaftar</p>
@@ -1003,5 +1034,20 @@
         </div>
     </footer>
     <!-- Footer -->
+
+    <script src="assets/script/jquery-3.5.1.min.js"></script>
+    <script>
+     $(document).ready(function() {
+
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+
+    });
+    });
+    </script>
 </body>
 </html>
