@@ -973,7 +973,7 @@
                         <p class="has-text-grey-light is-size-6 has-text-weight-medium">NEWSLETTER</p>
                     </div>
                     <div class="py-2">
-                        <div class="is-flex">
+                        <div class="is-flex cm-newsletter-wrapper">
                             <form class="cm-form-newsletter">
                                 <input class="cm-newsletter-input" type="email" placeholder="Email"/>
                                 <button class="button is-info is-rounded has-text-weight-medium is-small mr-2">Berlangganan</button>
@@ -987,7 +987,7 @@
                 <div class="column">
                     <div class="pb-2 pt-6">
                         <p class="has-text-grey-lighter">
-                            <div class="is-flex">
+                            <div class="is-flex mx-2">
                                 <div class="cm-social-button mx-2">
                                     <img src="assets/svg/facebook-f-brands.svg" class="cm-md-icon"/>
                                 </div>

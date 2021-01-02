@@ -187,6 +187,9 @@ html * {
   font-family: "Montserrat-Light", Fallback, sans-serif !important;
   font-weight: bold;
 }
+.cm-newsletter-wrapper {
+  max-width: 150px;
+}
 @media only screen and (max-width: 768px) {
   .campaign {
     display: none;
