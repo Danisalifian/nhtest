@@ -214,8 +214,8 @@
                                 </div>
                                 <div class="plan-content py-3">
                                 <?php
-                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[0]["initialPrice"].'</p>'; 
-                                    echo '<p class="pb-2">'.$data[0]["price"].'/ bln</p>';                
+                                    echo '<p class="is-linethrough cm-size-6 py-2">Rp '.$data[0]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">Rp <span class="price">'.$data[0]["price"].'</span>/ bln</p>';                
                                 ?>
                                 </div>
                                 <div class="plan-content py-3">
@@ -246,8 +246,8 @@
                                 </div>
                                 <div class="plan-content py-3">
                                 <?php
-                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[1]["initialPrice"].'</p>'; 
-                                    echo '<p class="pb-2">'.$data[1]["price"].'/ bln</p>';                
+                                    echo '<p class="is-linethrough cm-size-6 py-2">Rp '.$data[1]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">Rp <span class="price">'.$data[1]["price"].'</span>/ bln</p>';              
                                 ?>
                                 </div>
                                 <div class="plan-content py-3">
@@ -280,8 +280,8 @@
                                 </div>
                                 <div class="plan-content py-3 has-background-info no-border">
                                 <?php
-                                    echo '<p class="is-linethrough has-text-white cm-size-6 py-2">'.$data[2]["initialPrice"].'</p>'; 
-                                    echo '<p class="has-text-white pb-2">'.$data[2]["price"].'/ bln</p>';                
+                                    echo '<p class="is-linethrough cm-size-6 py-2 has-text-white">Rp '.$data[2]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2 has-text-white">Rp <span class="price">'.$data[2]["price"].'</span>/ bln</p>';               
                                 ?>
                                 </div>
                                 <div class="ribbon-wrapper">
@@ -324,8 +324,8 @@
                                 </div>
                                 <div class="plan-content py-3">
                                 <?php
-                                    echo '<p class="is-linethrough cm-size-6 py-2">'.$data[3]["initialPrice"].'</p>'; 
-                                    echo '<p class="pb-2">'.$data[3]["price"].'/ bln</p>';                
+                                    echo '<p class="is-linethrough cm-size-6 py-2">Rp '.$data[3]["initialPrice"].'</p>'; 
+                                    echo '<p class="pb-2">Rp <span class="price">'.$data[3]["price"].'</span>/ bln</p>';                
                                 ?>
                                 </div>
                                 <div class="plan-content py-3">
@@ -1036,17 +1036,14 @@
     <!-- Footer -->
 
     <script src="assets/script/jquery-3.5.1.min.js"></script>
+    <script src="assets/script/jquery.lettering-0.6.1.min.js"></script>
     <script>
-     $(document).ready(function() {
-
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
-
-    });
+    $(document).ready(function() {
+        $(".navbar-burger").click(function() {
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        });
+        $(".price").lettering();
     });
     </script>
 </body>
