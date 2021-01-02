@@ -1,0 +1,53 @@
+version: "3.2"
+services:
+  webpage:
+    build:
+      context: .
+      dockerfile: landingpage/Dockerfile
+    ports:
+      - "3000:80"
+    container_name: landingpage
+  php:
+    build:
+      context: .
+      dockerfile: boxbilling/Dockerfile
+    networks:
+      - frontend
+      - backend
+    environment:
+      - DB_HOST=bb-mysql
+      - DB_NAME=boxbilling
+      - DB_USER=boxbilling
+      - DB_PASS=boxbilling
+    ports:
+      - "8004:80"
+    container_name: boxbilling
+  mysql:
+    image: mysql:5.7
+    networks:
+      - backend
+    environment:
+      - MYSQL_ROOT_PASSWORD=boxbilling
+      - MYSQL_USER=boxbilling
+      - MYSQL_PASSWORD=boxbilling
+      - MYSQL_DATABASE=boxbilling
+    ports:
+      - "3306:3306"
+    container_name: bb-mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    depends_on:
+      - mysql
+    networks:
+      - backend
+    ports:
+      - "8005:80"
+    environment:
+      - PMA_HOST=bb-mysql
+      - PMA_PORT= 3306
+    volumes:
+      - /sessions
+    container_name: bb-phpmyadmin
+networks:
+  frontend:
+  backend:
